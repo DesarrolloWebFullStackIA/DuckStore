@@ -84,7 +84,7 @@ html {
 }
 
 body {
-  background-color: var(--color-background);
+  background-color:#ffffff;
   color: var(--color-on-background);
   font-family: 'Manrope', sans-serif;
   font-size: 16px;
@@ -325,43 +325,6 @@ body {
   max-width: 42rem;
 }
 
-/* --- Filters --- */
-.filters-wrapper {
-  display: flex;
-  gap: 2rem;
-  margin-bottom: 3rem;
-  border-bottom: 1px solid rgba(77, 70, 53, 0.3);
-  padding-bottom: 1rem;
-  overflow-x: auto;
-  white-space: nowrap;
-}
-
-.filter-btn {
-  font-family: 'Manrope', sans-serif;
-  font-size: 12px;
-  line-height: 1.0;
-  letter-spacing: 0.15em;
-  font-weight: 600;
-  text-transform: uppercase;
-  background: none;
-  border: none;
-  border-bottom: 1px solid transparent;
-  color: var(--color-on-surface-variant);
-  padding-bottom: 0.5rem;
-  cursor: pointer;
-  transition: all 0.3s ease;
-  letter-spacing: 0.2em;
-}
-
-.filter-btn:hover {
-  color: var(--color-primary);
-}
-
-.filter-btn.active {
-  border-bottom-color: var(--color-primary);
-  color: var(--color-primary);
-}
-
 /* --- Product Grid --- */
 .product-grid {
   display: grid;
@@ -428,23 +391,45 @@ body {
   color: var(--color-on-background);
 }
 
-.product-price {
-  font-family: 'Manrope', sans-serif;
-  font-size: 12px;
-  line-height: 1.0;
-  letter-spacing: 0.15em;
-  font-weight: 600;
-  text-transform: uppercase;
-  color: var(--color-primary);
-}
-
 .product-description {
   font-family: 'Manrope', sans-serif;
   font-size: 16px;
   line-height: 1.6;
   font-weight: 400;
-  color: var(--color-on-surface-variant);
+  color: white;
   font-style: italic;
+
+  /* CAMBIADO: ocupa todo el ancho de la imagen */
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+
+  /* Apariencia del recuadro */
+  box-sizing: border-box;
+  margin: 0;
+  padding: 16px 24px;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.85);
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(4px);
+
+  /* CAMBIADO: empieza debajo de la imagen */
+  transform: translateY(100%);
+  opacity: 0;
+  visibility: hidden;
+
+  transition:
+    transform 0.4s ease-out,
+    opacity 0.4s ease-out,
+    visibility 0.4s ease-out;
+}
+
+.product-card:hover .product-description {
+  transform: translateY(0);
+  opacity: 0.7;
+  visibility: visible;
 }
 
 /* --- Footer --- */
