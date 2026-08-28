@@ -36,7 +36,7 @@
   --color-on-secondary-fixed: #f5f5f5;
   --color-background: #ffffff;
   --color-primary-fixed: #ffe088;
-  --color-on-background: #1a1c1a;
+  --color-on-background: #131313;
   --color-surface-container-low: #f2f2f2;
   --color-inverse-primary: #f2ca50;
   --color-secondary-container: #d8d9d6;
@@ -163,8 +163,8 @@ body {
   left: 0;
   width: 100%;
   z-index: 50;
-  background-color: rgba(240, 240, 240, 0.95);
-  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  background-color: #131313;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
   backdrop-filter: blur(12px);
 }
 
@@ -198,7 +198,7 @@ body {
   line-height: 1.3;
   font-weight: 500;
   letter-spacing: -0.02em;
-  color: var(--color-on-background);
+  color: #e5e2e1;
 }
 
 
@@ -221,7 +221,7 @@ body {
   letter-spacing: 0.15em;
   font-weight: 600;
   text-transform: uppercase;
-  color: var(--color-on-surface-variant);
+  color: #e5e2e1;
   text-decoration: none;
   transition: color 0.3s ease;
 }
@@ -234,7 +234,7 @@ body {
   display: flex;
   align-items: center;
   gap: 1.5rem;
-  color: var(--color-on-surface-variant);
+  color: #e5e2e1;
 }
 
 .search-btn {
@@ -252,6 +252,69 @@ body {
 
 .search-btn .material-symbols-outlined {
   font-variation-settings: 'wght' 300;
+}
+
+/* --- Hamburger Button --- */
+.hamburger-btn {
+  display: block;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0.5rem;
+  z-index: 60;
+}
+
+.hamburger-icon {
+  width: 28px;
+  height: 28px;
+  object-fit: contain;
+}
+
+@media (min-width: 768px) {
+  .hamburger-btn {
+    display: none;
+  }
+}
+
+/* --- Mobile Nav --- */
+.nav-mobile {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  gap: 0;
+  padding: 1rem 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.nav-mobile.active {
+  display: flex;
+}
+
+.nav-mobile-link {
+  font-family: 'Manrope', sans-serif;
+  font-size: 14px;
+  line-height: 1.0;
+  letter-spacing: 0.15em;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #e5e2e1;
+  text-decoration: none;
+  padding: 1rem 0;
+  width: 100%;
+  text-align: center;
+  transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+.nav-mobile-link:hover,
+.nav-mobile-link.active {
+  color: var(--color-primary);
+  background-color: rgba(255, 255, 255, 0.05);
+}
+
+@media (min-width: 768px) {
+  .nav-mobile {
+    display: none !important;
+  }
 }
 
 /* --- Main --- */
@@ -581,8 +644,8 @@ body {
 
 /* --- Footer --- */
 .site-footer {
-  background-color: #ebebeb;
-  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  background-color: #131313;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
   padding-top: 3rem;
   padding-bottom: 3rem;
   margin-top: auto;
@@ -592,6 +655,18 @@ body {
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
+}
+
+.footer-concierge-label {
+  font-family: 'Manrope', sans-serif;
+  font-size: 12px;
+  line-height: 1.0;
+  letter-spacing: 0.15em;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: var(--color-primary);
+  letter-spacing: 0.2em;
+  margin-bottom: 0.5rem;
 }
 
 .footer-inner {
@@ -640,7 +715,7 @@ body {
   line-height: 1.3;
   font-weight: 500;
   letter-spacing: -0.02em;
-  color: var(--color-on-background);
+  color: #e5e2e1;
 }
 
 .footer-copyright {
@@ -650,7 +725,7 @@ body {
   letter-spacing: 0.15em;
   font-weight: 600;
   text-transform: uppercase;
-  color: var(--color-on-surface-variant);
+  color: #e5e2e1;
   opacity: 0.6;
 }
 
@@ -682,7 +757,7 @@ body {
   font-size: 16px;
   line-height: 1.6;
   font-weight: 400;
-  color: var(--color-on-background);
+  color: #e5e2e1;
   text-decoration: none;
   transition: color 0.3s ease;
 }
