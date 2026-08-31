@@ -83,7 +83,7 @@ html {
 }
 
 body {
-  background-color: var(--color-background);
+  background-color: white;
   color: var(--color-on-background);
   font-family: 'Manrope', sans-serif;
   line-height: 1.6;
