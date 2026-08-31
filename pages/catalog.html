@@ -200,18 +200,6 @@
         <a href="mailto:concierge@duckstore.com" class="footer-link">concierge@duckstore.com</a>
       </div>
     </footer>
-
-    <!-- Script para filtros -->
-    <script>
-      // Simple filter interaction for visual feedback
-      document.querySelectorAll(".filter-btn").forEach((btn) => {
-        btn.addEventListener("click", (e) => {
-          document.querySelectorAll(".filter-btn").forEach((b) => {
-            b.classList.remove("active");
-          });
-          e.target.classList.add("active");
-        });
-      });
-    </script>
+    <script src="../src/js/hamb.js"></script>
   </body>
 </html>
