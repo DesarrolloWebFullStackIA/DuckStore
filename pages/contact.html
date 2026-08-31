@@ -13,26 +13,37 @@
   
   <!-- Estilos personalizados -->
   <link rel="stylesheet" href="../src/css/contact-styles.css">
+  <link rel="stylesheet" href="../src/css/global-styles.css">
 </head>
 <body>
   <!-- Header / Navegacion -->
   <header class="site-header">
     <div class="container header-inner">
-      <a class="logo-link" href="#">DUCKSTORE</a>
-      
+      <a class="logo-link" href="../index.html">
+        <img 
+          src="../src/img/logo-duck.png" 
+          alt="DUCKSTORE Logo" 
+          class="logo-img"
+        >
+        <span class="logo-text">DUCKSTORE</span>
+      </a>
+
       <nav class="nav-desktop">
-        <a class="nav-link" href="#">CATALOG</a>
-        <a class="nav-link" href="#">COLLECTIONS</a>
-        <a class="nav-link" href="#">ARTISANS</a>
-        <a class="nav-link" href="#">STORY</a>
+        <a class="nav-link" href="catalog.html">CATÁLOGO</a>
+        <a class="nav-link" href="product.html">PRODUCTO DESTACADO</a>
+        <a class="nav-link active" href="contact.html">CONTACTO</a>
       </nav>
-      
-      <div class="header-actions">
-        <button class="search-btn" aria-label="Buscar">
-          <span class="material-symbols-outlined">search</span>
-        </button>
-      </div>
+
+      <button class="hamburger-btn" id="hamburger-btn" aria-label="Abrir menú">
+        <img src="../src/img/icono-burguer.png" alt="Menú" class="hamburger-icon">
+      </button>
     </div>
+
+    <nav class="nav-mobile" id="nav-mobile">
+      <a class="nav-mobile-link" href="catalog.html">CATÁLOGO</a>
+      <a class="nav-mobile-link" href="product.html">PRODUCTO DESTACADO</a>
+      <a class="nav-mobile-link active" href="contact.html">CONTACTO</a>
+    </nav>
   </header>
 
   <!-- Contenido principal -->
@@ -49,7 +60,7 @@
       <!-- Columna izquierda: Info + Mapa -->
       <div class="contact-info-column">
         <div class="contact-details">
-          <h2 class="contact-heading">Mayfair Gallery</h2>
+          <h2 class="contact-heading">Ubicación</h2>
           <p class="contact-address">Paseo de la Castellana</p>
           <p class="contact-address">28046 Madrid, España</p>
           
@@ -134,35 +145,29 @@
     </div>
   </main>
 
-  <!-- Footer -->
+ <!-- Footer -->
   <footer class="site-footer">
     <div class="footer-inner">
       <div class="footer-brand">
         <div class="footer-logo-wrapper">
           <img 
-            src="https://lh3.googleusercontent.com/aida/AEtjO1WoZ6lV-lTSaNU9nq51LeqIuYd6aYaTFZnuijzxNT27KKSc4VJ4S1Fapz1LpvRHfzdqRknZ1g_gc2RP1ngRROePGIUr-KXUSqgzUazsnSjyyx4SVg3I8aLcE9QUMlY_dY3Gp8bhtHzHKM0LqTT10ykrcSvMMp8rPBvDDGKHH6sO4Z8f5s4emQ8t0HY3xtTuR3VWDll38M73UFXAC3_pKTyFSshyrvVNwlAaGaCzGm-LZoscrApDDX-mhUQ" 
-            alt="DuckStore Logo" 
+            src="../src/img/logo-duck.png" 
+            alt="DUCKSTORE Logo" 
             class="footer-logo"
-          >
-          <span class="footer-brand-name">DUCKSTORE</span>
+          />
+           <span class="footer-brand-name">DUCKSTORE</span>
         </div>
         <p class="footer-copyright">
-          © 2024 DUCKSTORE. ALL RIGHTS RESERVED.
+          © 2026 DUCKSTORE. 
         </p>
       </div>
       
-      <div class="footer-contact">
-        <div class="footer-contact-group">
-          <span class="footer-contact-label">INQUIRIES</span>
-          <a href="tel:+442079460000" class="footer-link">+44 20 7946 0000</a>
-        </div>
-        <div class="footer-contact-group">
-          <span class="footer-contact-label">SUPPORT</span>
-          <a href="mailto:concierge@duckstore.com" class="footer-link">concierge@duckstore.com</a>
-        </div>
+      <div class="footer-concierge">
+        <h4 class="footer-concierge-label">CONTACTO</h4>
+        <a href="tel:+442079460000" class="footer-link">+44 20 7946 0000</a>
+        <a href="mailto:concierge@duckstore.com" class="footer-link">concierge@duckstore.com</a>
       </div>
-    </div>
-  </footer>
+    </footer>
 
   <script src="../src/js/contact.js"></script>
 </body>
