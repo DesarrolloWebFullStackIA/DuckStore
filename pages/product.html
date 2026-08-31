@@ -13,31 +13,30 @@
   
   <!-- Estilos personalizados -->
   <link rel="stylesheet" href="../src/css/product-styles.css">
+  <link rel="stylesheet" href="../src/css/global-styles.css">
 </head>
 <body>
   <!-- Header / Navegacion -->
   <header class="site-header">
     <div class="container header-inner">
-      <a class="logo-link" href="#">
+      <a class="logo-link" href="../index.html">
         <img 
-          src="../src/css/img/logo-duckstore.png" 
+          src="../src/img/logo-duck.png" 
           alt="DuckStore Logo" 
           class="logo-img"
         >
-        DUCKSTORE
+        <span class="logo-text">DUCKSTORE</span>
       </a>
       
       <nav class="nav-desktop">
-        <a class="nav-link active" href="#">CATÁLOGO</a>
-        <a class="nav-link" href="#">PRODUCTO DESTACADO</a>
-        <a class="nav-link" href="#">CONTACTO</a>
+        <a class="nav-link" href="catalog.html">CATÁLOGO</a>
+        <a class="nav-link active" href="product.html">PRODUCTO DESTACADO</a>
+        <a class="nav-link" href="contact.html">CONTACTO</a>
       </nav>
-      
-      <div class="header-actions">
-        <button class="search-btn" aria-label="Buscar">
-          <span class="material-symbols-outlined">buscar</span>
-        </button>
-      </div>
+
+      <button class="hamburger-btn" id="hamburger-btn" aria-label="Abrir menú">
+        <img src="../src/img/icono-burguer.png" alt="Menú" class="hamburger-icon">
+      </button>
     </div>
   </header>
 
@@ -145,29 +144,28 @@ SOLICITUD DE ADQUISICIÓN
     </div>
   </main>
 
-  <!-- Footer -->
+ <!-- Footer -->
   <footer class="site-footer">
     <div class="footer-inner">
       <div class="footer-brand">
         <div class="footer-logo-wrapper">
           <img 
-            src="../src/css/img/logo-duckstore.png" 
-            alt="Duckstore Logo" 
+            src="../src/img/logo-duck.png" 
+            alt="DUCKSTORE Logo" 
             class="footer-logo"
-          >
-          <span class="footer-brand-name">DUCKSTORE</span>
+          />
+           <span class="footer-brand-name">DUCKSTORE</span>
         </div>
         <p class="footer-copyright">
-          © 2024 DUCKSTORE. ALL RIGHTS RESERVED.
+          © 2026 DUCKSTORE.
         </p>
       </div>
       
       <div class="footer-concierge">
-        <span class="footer-concierge-label">CONTACTO</span>
+        <h4 class="footer-concierge-label">CONTACTO</h4>
         <a href="tel:+442079460000" class="footer-link">+44 20 7946 0000</a>
         <a href="mailto:concierge@duckstore.com" class="footer-link">concierge@duckstore.com</a>
       </div>
-    </div>
-  </footer>
+    </footer>
 </body>
 </html>

@@ -19,9 +19,9 @@
  <!-- Header / Navegacion -->
    <header class="site-header">
     <div class="container header-inner">
-      <a class="logo-link" href="../index.html">
+      <a class="logo-link" href="index.html">
         <img 
-          src="../src/img/logo-duck.png"
+          src="src/img/logo-duck.png"
           alt="DUCKSTORE Logo" 
           class="logo-img"
         >
@@ -29,11 +29,14 @@
       </a>
 
       <nav class="nav-desktop">
-        <a class="nav-link active" href="catalog.html">CATÁLOGO</a>
-        <a class="nav-link" href="product.html">PRODUCTO DESTACADO</a>
-        <a class="nav-link" href="contact.html">CONTACTO</a>
+        <a class="nav-link" href="pages/catalog.html">CATÁLOGO</a>
+        <a class="nav-link" href="pages/product.html">PRODUCTO DESTACADO</a>
+        <a class="nav-link" href="pages/contact.html">CONTACTO</a>
       </nav>
    
+      <button class="hamburger-btn" id="hamburger-btn" aria-label="Abrir menú">
+        <img src="src/img/icono-burguer.png" alt="Menú" class="hamburger-icon">
+      </button>
     </div>
   </header>
 
@@ -125,24 +128,23 @@
       <div class="footer-brand">
         <div class="footer-logo-wrapper">
           <img 
-            src="https://lh3.googleusercontent.com/aida/AEtjO1WoZ6lV-lTSaNU9nq51LeqIuYd6aYaTFZnuijzxNT27KKSc4VJ4S1Fapz1LpvRHfzdqRknZ1g_gc2RP1ngRROePGIUr-KXUSqgzUazsnSjyyx4SVg3I8aLcE9QUMlY_dY3Gp8bhtHzHKM0LqTT10ykrcSvMMp8rPBvDDGKHH6sO4Z8f5s4emQ8t0HY3xtTuR3VWDll38M73UFXAC3_pKTyFSshyrvVNwlAaGaCzGm-LZoscrApDDX-mhUQ" 
-            alt="DuckStore Logo" 
+            src="src/img/logo-duck.png" 
+            alt="DUCKSTORE Logo" 
             class="footer-logo"
-          >
-          <span class="footer-brand-name">DUCKSTORE</span>
+          />
+           <span class="footer-brand-name">DUCKSTORE</span>
         </div>
         <p class="footer-copyright">
-          © 2024 DUCKSTORE. ALL RIGHTS RESERVED.
+          © 2026 DUCKSTORE. 
         </p>
       </div>
       
       <div class="footer-concierge">
-        <p class="footer-concierge-label">CONCIERGE SERVICES</p>
+        <h4 class="footer-concierge-label">CONTACTO</h4>
         <a href="tel:+442079460000" class="footer-link">+44 20 7946 0000</a>
         <a href="mailto:concierge@duckstore.com" class="footer-link">concierge@duckstore.com</a>
       </div>
-    </div>
-  </footer>
+    </footer>
 
   <!-- Script para efecto scroll en header -->
   <script>
