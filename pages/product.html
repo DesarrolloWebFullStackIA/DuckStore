@@ -13,33 +13,39 @@
   
   <!-- Estilos personalizados -->
   <link rel="stylesheet" href="../src/css/product-styles.css">
+  <link rel="stylesheet" href="../src/css/global-styles.css">
+  
+  <!-- Scripts -->
+  <script src="../src/js/global-js.js"></script>
 </head>
 <body>
   <!-- Header / Navegacion -->
   <header class="site-header">
     <div class="container header-inner">
-      <a class="logo-link" href="#">
+      <a class="logo-link" href="../index.html">
         <img 
-          src="https://lh3.googleusercontent.com/aida-public/AB6AXuC9nXJNiaa0pBwgr525-XUej_e4fTvIMQutH7HJPhniut2qgMD7EEMrQ-9rvpZwBemFVeCrr1-9zFIhnogho9OCH0e41Enl9vTVR0g6ZdJJEnSQkNDLj1QjvUWkLbeXEDtkmBAWwUiRejCjwvhu63d3P62pVR2NHdiLQVpRK5RCJ669ROu5gktcSH_ZZEfESXCFNv2cwBQ1aNK2ylgyxl2EYx4Gg62s5V_6722mFSNBPXLuyXjep-6L2Q" 
+          src="../src/img/logo-duck.png" 
           alt="DuckStore Logo" 
           class="logo-img"
         >
-        DUCKSTORE
+        <span class="logo-text">DUCKSTORE</span>
       </a>
       
       <nav class="nav-desktop">
-        <a class="nav-link active" href="#">CATALOG</a>
-        <a class="nav-link" href="#">COLLECTIONS</a>
-        <a class="nav-link" href="#">ARTISANS</a>
-        <a class="nav-link" href="#">STORY</a>
+        <a class="nav-link" href="catalog.html">CATÁLOGO</a>
+        <a class="nav-link active" href="product.html">PRODUCTO DESTACADO</a>
+        <a class="nav-link" href="contact.html">CONTACTO</a>
       </nav>
-      
-      <div class="header-actions">
-        <button class="search-btn" aria-label="Buscar">
-          <span class="material-symbols-outlined">search</span>
-        </button>
-      </div>
+
+      <button class="hamburger-btn" id="hamburger-btn" aria-label="Abrir menú">
+        <img src="../src/img/icono-burguer.png" alt="Menú" class="hamburger-icon">
+      </button>
     </div>
+    <nav class="nav-mobile" id="nav-mobile">
+      <a class="nav-mobile-link" href="catalog.html">CATÁLOGO</a>
+      <a class="nav-mobile-link active" href="product.html">PRODUCTO DESTACADO</a>
+      <a class="nav-mobile-link" href="contact.html">CONTACTO</a>
+    </nav>
   </header>
 
   <!-- Contenido principal -->
@@ -47,11 +53,11 @@
     <div class="container">
       <!-- Breadcrumbs -->
       <nav class="breadcrumbs">
-        <a href="#">HOME</a>
+        <a href="#">INICIO</a>
         <span class="separator">/</span>
-        <a href="#">CATALOG</a>
+        <a href="#">CATÁLOGO</a>
         <span class="separator">/</span>
-        <span class="current">AURELIAN MALLARD</span>
+        <span class="current"> PRODUCTO DESTACADO</span>
       </nav>
 
       <!-- Product Layout -->
@@ -61,8 +67,8 @@
           <!-- Main image -->
           <div class="image-container main-image">
             <img 
-              src="https://lh3.googleusercontent.com/aida-public/AB6AXuDrJJAdzZiBbu9kuHkz54lfQntKcgwMz6eVH6BkJ6fU6Z0HK2TIqoDx_TIF_byGMTTyOqGbKg64ryItGdZzLHmHk7M1nI5mtQqPDxrXl7oqm1sLTJ8K-cqLS6ktMJ9GwTxOXqljDrtRpRPEDN-XK81TTRkTN8H5UIFsNxIf2kDznOxgsfNOb5ydu8sI8JJXQ2wjdqqZuoX7_P8BNgoivkNe4TActYhEni59mdKMXhanEPveWe5jSZE_5g" 
-              alt="A highly detailed, ultra-realistic close-up studio shot of a magnificent solid 24k gold mallard duck collectible. The duck sits on a stark, matte black pedestal against a pitch-black background, creating intense contrast. Lighting is dramatic and precise, highlighting the meticulous etching of the feathers and the gleaming, polished surface of the gold. The mood is opulent, exclusive, and profoundly luxurious, perfectly fitting a high-end collector's catalog."
+              src="../src/img/aurelian-duck.jpg" 
+              alt="Una fotografía de estudio en primer plano de un pato real de oro macizo de 24 quilates. El pato descansa sobre un sobrio pedestal negro mate."
             >
           </div>
           
@@ -70,14 +76,14 @@
           <div class="thumbnail-grid">
             <div class="image-container">
               <img 
-                src="https://lh3.googleusercontent.com/aida-public/AB6AXuAsPvllXiY8atRRPMCI0nwvE-OFUuA84oa6XJm-xyKzhX9p114ubenNY7GwR8-6nLHHg4vnZVQxZlD-_uPtjNUtafCTG1gmkx4xtI37veET_Erp1xAyRjM7A9q-AAg6H1vJF_IoJVItrdtijnUT95tMgLPwyDd4gxCwLuV1Ujl9cOq4XP1Ae-LQdd1YAneqZPJQGkVhQQXVdQuNpMX7WIESJwOdaVJ6f6M9UkuXDSScmMvZ8VscVcaypA" 
-                alt="A detailed macro photograph focusing on the intricate feather texture of a 24k gold mallard duck collectible. The lighting catches the raised edges of the sculpted feathers, revealing the exquisite craftsmanship and artisan detailing. The background is a velvety deep black, emphasizing the warm, rich tones of the precious metal."
+                src="../src/img/aurelian-duck-zoom.jpg" 
+                alt="Una fotografía macro detallada que se centra en la intrincada textura de las plumas de la figura coleccionable del pato real realizada en oro de 24 quilates."
               >
             </div>
             <div class="image-container">
               <img 
-                src="https://lh3.googleusercontent.com/aida-public/AB6AXuBc28iljVwC0ABtDQTXEyB7UQA3fLlujdNHjpCOIc65luId4loIbVP8IuAwPSMDOKxMwz1Okj0k3MQKB8stjNlk7GSd3TY6bIYjLsFqd_4LYRBnt599QXQGjIRklLrYV3Dq5YwPNWC4xA9LG86a50IDkCx0SAALYMEJd90hD8tK3JCMkLeALDwlfE0v85WHjkp6kreICcKj6SgitE63oKjQKMQofw_WZQ9rZ9lrhUboU9fX9u7VD9cGMg" 
-                alt="A lifestyle shot of the 24k gold Aurelian Mallard duck placed delicately on a polished black marble surface within a dimly lit, luxurious modern study. Faint reflections of warm, ambient light softly illuminate the gold, showcasing its substantial weight and presence as a centerpiece object d'art."
+                src="../src/img/aurelian-duck-overview.jpg" 
+                alt="Una fotografía de estilo de vida en la que se muestra el pato Aurelian Mallard, de oro de 24 quilates, colocado con delicadeza sobre una superficie de mármol negro pulido en un lujoso y moderno estudio con iluminación tenue."
               >
             </div>
           </div>
@@ -87,37 +93,36 @@
         <div class="product-details">
           <div>
             <!-- Edition badge -->
-            <div class="edition-badge">LIMITED EDITION 1 OF 50</div>
+            <div class="edition-badge">EDICIÓN LIMITADA 1 DE 50</div>
             
             <!-- Title -->
             <h1 class="product-title">Aurelian Mallard</h1>
             
             <!-- Price -->
-            <p class="product-price">$12,500</p>
+            <p class="product-price">12,500€</p>
             
             <!-- Description -->
             <div class="product-description">
               <p>
-                A masterpiece of metallurgical artistry, the Aurelian Mallard represents the pinnacle of our collection. Forged from solid bronze and meticulously hand-plated in pure 24-karat gold by master artisan Elias Thorne in Geneva. Each piece undergoes a rigorous 14-stage polishing process to achieve its liquid-light finish, capturing the majestic poise of the waterfowl in an eternal, luminous state.
-              </p>
+Una obra maestra del arte metalúrgico, el Aurelian Mallard representa la cúspide de nuestra colección. Forjado en bronce macizo y meticulosamente bañado a mano en oro puro de 24 quilates por el maestro artesano Elias Thorne en Ginebra, cada ejemplar se somete a un riguroso proceso de pulido de 14 etapas para lograr un acabado que evoca la fluidez de la luz, capturando así el porte majestuoso del ave acuática en un estado eterno y luminoso.              </p>
             </div>
 
             <!-- Specifications -->
             <div class="specifications">
-              <h3 class="specifications-title">SPECIFICATIONS</h3>
+              <h3 class="specifications-title">Especificaciones</h3>
               <div class="spec-grid">
                 <div class="spec-item">
                   <span class="spec-label">MATERIAL</span>
-                  <span class="spec-value">24k Gold Plate</span>
+                  <span class="spec-value">24k Oro </span>
                 </div>
                 <div class="detail-divider"></div>
                 <div class="spec-item">
-                  <span class="spec-label">WEIGHT</span>
+                  <span class="spec-label">PESO</span>
                   <span class="spec-value">1.2 kg</span>
                 </div>
                 <div class="detail-divider"></div>
                 <div class="spec-item">
-                  <span class="spec-label">ARTISAN</span>
+                  <span class="spec-label">ARTESANO</span>
                   <span class="spec-value">Elias Thorne</span>
                 </div>
               </div>
@@ -129,17 +134,17 @@
             <div class="availability">
               <span class="availability-text">
                 <span class="availability-dot"></span>
-                3 Allocations Remaining
+                Quedan 3 unidades disponibles
               </span>
             </div>
             
             <button class="solid-button">
-              REQUEST ACQUISITION
+SOLICITUD DE ADQUISICIÓN
               <span class="material-symbols-outlined">arrow_forward</span>
             </button>
             
             <div class="viewing-link">
-              <a href="#">SCHEDULE A PRIVATE VIEWING</a>
+              <a href="#">PROGRAMAR UNA VISITA PRIVADA</a>
             </div>
           </div>
         </div>
@@ -147,29 +152,29 @@
     </div>
   </main>
 
-  <!-- Footer -->
+ <!-- Footer -->
   <footer class="site-footer">
     <div class="footer-inner">
       <div class="footer-brand">
         <div class="footer-logo-wrapper">
           <img 
-            src="https://lh3.googleusercontent.com/aida/AEtjO1WoZ6lV-lTSaNU9nq51LeqIuYd6aYaTFZnuijzxNT27KKSc4VJ4S1Fapz1LpvRHfzdqRknZ1g_gc2RP1ngRROePGIUr-KXUSqgzUazsnSjyyx4SVg3I8aLcE9QUMlY_dY3Gp8bhtHzHKM0LqTT10ykrcSvMMp8rPBvDDGKHH6sO4Z8f5s4emQ8t0HY3xtTuR3VWDll38M73UFXAC3_pKTyFSshyrvVNwlAaGaCzGm-LZoscrApDDX-mhUQ" 
-            alt="Duckstore Logo" 
+            src="../src/img/logo-duck.png" 
+            alt="DUCKSTORE Logo" 
             class="footer-logo"
-          >
-          <span class="footer-brand-name">DUCKSTORE</span>
+          />
+           <span class="footer-brand-name">DUCKSTORE</span>
         </div>
         <p class="footer-copyright">
-          © 2024 DUCKSTORE. ALL RIGHTS RESERVED.
+          © 2026 DUCKSTORE.
         </p>
       </div>
       
       <div class="footer-concierge">
-        <span class="footer-concierge-label">CONTACT CONCIERGE</span>
+        <h4 class="footer-concierge-label">CONTACTO</h4>
         <a href="tel:+442079460000" class="footer-link">+44 20 7946 0000</a>
         <a href="mailto:concierge@duckstore.com" class="footer-link">concierge@duckstore.com</a>
       </div>
-    </div>
-  </footer>
+    </footer>
+    <script src="../src/js/hamb.js"></script>
 </body>
 </html>

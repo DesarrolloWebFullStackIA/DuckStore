@@ -3,55 +3,55 @@
    (Reemplaza Tailwind)
    =================================== */
 
-/* --- Variables (mismas que antes) --- */
+/* --- Variables (tema claro: fondos blancos, texto negro) --- */
 :root {
   /* Colores */
   --color-on-error: #690005;
   --color-secondary-fixed: #e2e3df;
   --color-tertiary-fixed-dim: #c8c6c5;
-  --color-inverse-on-surface: #313030;
-  --color-on-tertiary: #313030;
+  --color-inverse-on-surface: #f5f5f5;
+  --color-on-tertiary: #f5f5f5;
   --color-on-tertiary-fixed-variant: #474746;
-  --color-surface-bright: #3a3939;
-  --color-on-secondary-container: #b8b9b5;
-  --color-outline: #99907c;
-  --color-surface-container-lowest: #0e0e0e;
+  --color-surface-bright: #f5f5f5;
+  --color-on-secondary-container: #1a1c1a;
+  --color-outline: #757768;
+  --color-surface-container-lowest: #ffffff;
   --color-tertiary-fixed: #e5e2e1;
-  --color-primary: #f2ca50;
+  --color-primary: #8a6d00;
   --color-surface-tint: #e9c349;
   --color-secondary-fixed-dim: #c6c7c3;
-  --color-surface-container-highest: #353534;
-  --color-secondary: #c6c7c3;
-  --color-on-surface: #e5e2e1;
+  --color-surface-container-highest: #e8e8e8;
+  --color-secondary: #5c5d5a;
+  --color-on-surface: #1a1c1a;
   --color-error: #ffb4ab;
-  --color-on-primary-container: #554300;
+  --color-on-primary-container: #ffffff;
   --color-on-secondary-fixed-variant: #454745;
-  --color-surface-container-high: #2a2a2a;
-  --color-on-primary-fixed: #241a00;
-  --color-inverse-surface: #e5e2e1;
+  --color-surface-container-high: #eeeeee;
+  --color-on-primary-fixed: #ffffff;
+  --color-inverse-surface: #1a1c1a;
   --color-on-error-container: #ffdad6;
-  --color-on-surface-variant: #d0c5af;
+  --color-on-surface-variant: #474640;
   --color-error-container: #93000a;
-  --color-surface-variant: #353534;
-  --color-on-secondary-fixed: #1a1c1a;
-  --color-background: #131313;
+  --color-surface-variant: #e0ddd4;
+  --color-on-secondary-fixed: #f5f5f5;
+  --color-background: #ffffff;
   --color-primary-fixed: #ffe088;
-  --color-on-background: #e5e2e1;
-  --color-surface-container-low: #1c1b1b;
-  --color-inverse-primary: #735c00;
-  --color-secondary-container: #484947;
-  --color-on-tertiary-fixed: #1c1b1b;
-  --color-surface-dim: #131313;
-  --color-outline-variant: #4d4635;
-  --color-on-primary-fixed-variant: #574500;
+  --color-on-background: #131313;
+  --color-surface-container-low: #f2f2f2;
+  --color-inverse-primary: #f2ca50;
+  --color-secondary-container: #d8d9d6;
+  --color-on-tertiary-fixed: #f5f5f5;
+  --color-surface-dim: #d8d8d8;
+  --color-outline-variant: #c9c5b4;
+  --color-on-primary-fixed-variant: #ffffff;
   --color-primary-container: #d4af37;
-  --color-surface-container: #201f1f;
-  --color-on-tertiary-container: #454544;
-  --color-on-primary: #3c2f00;
-  --color-surface: #131313;
+  --color-surface-container: #f0f0f0;
+  --color-on-tertiary-container: #1c1b1b;
+  --color-on-primary: #ffffff;
+  --color-surface: #ffffff;
   --color-primary-fixed-dim: #e9c349;
-  --color-tertiary: #d0cdcd;
-  --color-on-secondary: #2f312e;
+  --color-tertiary: #434343;
+  --color-on-secondary: #ffffff;
   --color-tertiary-container: #b4b2b2;
 
   /* Espaciado */
@@ -156,90 +156,27 @@ body {
   }
 }
 
-/* --- Header --- */
-.site-header {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  z-index: 50;
-  background-color: rgba(19, 19, 19, 0.95);
-  border-bottom: 1px solid rgba(77, 70, 53, 0.2);
-  backdrop-filter: blur(12px);
+
+/* --- Hamburger Button --- */
+.hamburger-btn {
+  display: block;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0.5rem;
+  z-index: 60;
 }
 
-.header-inner {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  height: 4rem;
-}
-
-.logo-link {
-  font-family: 'Playfair Display', serif;
-  font-size: 32px;
-  line-height: 1.3;
-  font-weight: 500;
-  letter-spacing: -0.02em;
-  color: var(--color-on-background);
-  text-decoration: none;
-  transition: color 0.3s ease;
-}
-
-.logo-link:hover {
-  color: var(--color-primary);
-}
-
-.nav-desktop {
-  display: none;
-  align-items: center;
-  gap: 2rem;
+.hamburger-icon {
+  width: 28px;
+  height: 28px;
+  object-fit: contain;
 }
 
 @media (min-width: 768px) {
-  .nav-desktop {
-    display: flex;
+  .hamburger-btn {
+    display: none;
   }
-}
-
-.nav-link {
-  font-family: 'Manrope', sans-serif;
-  font-size: 12px;
-  line-height: 1.0;
-  letter-spacing: 0.15em;
-  font-weight: 600;
-  text-transform: uppercase;
-  color: var(--color-on-surface-variant);
-  text-decoration: none;
-  transition: color 0.3s ease;
-}
-
-.nav-link:hover {
-  color: var(--color-primary);
-}
-
-.header-actions {
-  display: flex;
-  align-items: center;
-  gap: 1.5rem;
-  color: var(--color-on-surface-variant);
-}
-
-.search-btn {
-  background: none;
-  border: none;
-  color: inherit;
-  cursor: pointer;
-  transition: all 0.5s ease;
-}
-
-.search-btn:hover {
-  color: var(--color-primary);
-  opacity: 0.8;
-}
-
-.search-btn .material-symbols-outlined {
-  font-variation-settings: 'wght' 300;
 }
 
 /* --- Main --- */
@@ -266,6 +203,8 @@ body {
 .page-header {
   text-align: center;
   margin-bottom: 4rem;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.08);
 }
 
 @media (min-width: 768px) {
@@ -299,7 +238,7 @@ body {
 .page-divider {
   width: 4rem;
   height: 1px;
-  background-color: rgba(242, 202, 80, 0.4);
+  background-color: rgba(138, 109, 0, 0.4);
   margin-left: auto;
   margin-right: auto;
 }
@@ -408,10 +347,10 @@ body {
 .map-container {
   width: 100%;
   height: 20rem;
-  border: 1px solid rgba(212, 175, 55, 0.2);
+  border: 1px solid rgba(0, 0, 0, 0.08);
   position: relative;
   overflow: hidden;
-  background-color: var(--color-surface-container-lowest);
+  background-color: #f0f0f0;
 }
 
 .map-filter {
@@ -425,9 +364,9 @@ body {
 
 /* --- Contact Form Column --- */
 .contact-form-wrapper {
-  background-color: var(--color-surface-container-lowest);
+  background-color: #f5f5f5;
   padding: 2rem;
-  border: 1px solid rgba(212, 175, 55, 0.2);
+  border: 1px solid rgba(0, 0, 0, 0.08);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -484,7 +423,7 @@ body {
 .input-underline {
   width: 100%;
   border: none;
-  border-bottom: 1px solid rgba(212, 175, 55, 0.2);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.15);
   background: transparent;
   color: var(--color-on-background);
   padding: 8px 0;
@@ -563,110 +502,4 @@ body {
 .form-submit:hover {
   background-color: var(--color-primary);
   color: var(--color-on-primary);
-}
-
-/* --- Footer --- */
-.site-footer {
-  background-color: var(--color-surface-container-lowest);
-  border-top: 1px solid rgba(77, 70, 53, 0.2);
-  padding-top: 3rem;
-  padding-bottom: 3rem;
-  margin-top: auto;
-}
-
-.footer-inner {
-  max-width: var(--spacing-container-max);
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: var(--spacing-margin-mobile);
-  padding-right: var(--spacing-margin-mobile);
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: flex-start;
-  gap: 2rem;
-}
-
-@media (min-width: 768px) {
-  .footer-inner {
-    padding-left: var(--spacing-margin-desktop);
-    padding-right: var(--spacing-margin-desktop);
-    flex-direction: row;
-    align-items: center;
-  }
-}
-
-.footer-brand {
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-}
-
-.footer-logo-wrapper {
-  display: flex;
-  align-items: center;
-  gap: 1rem;
-}
-
-.footer-logo {
-  width: 3rem;
-  height: 3rem;
-  object-fit: contain;
-}
-
-.footer-brand-name {
-  font-family: 'Playfair Display', serif;
-  font-size: 32px;
-  line-height: 1.3;
-  font-weight: 500;
-  letter-spacing: -0.02em;
-  color: var(--color-on-background);
-}
-
-.footer-copyright {
-  font-family: 'Manrope', sans-serif;
-  font-size: 12px;
-  line-height: 1.0;
-  letter-spacing: 0.15em;
-  font-weight: 600;
-  text-transform: uppercase;
-  color: var(--color-on-surface-variant);
-  opacity: 0.6;
-}
-
-.footer-contact {
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-}
-
-.footer-contact-group {
-  display: flex;
-  flex-direction: column;
-  gap: 0.25rem;
-}
-
-.footer-contact-label {
-  font-family: 'Manrope', sans-serif;
-  font-size: 12px;
-  line-height: 1.0;
-  letter-spacing: 0.15em;
-  font-weight: 600;
-  text-transform: uppercase;
-  color: var(--color-primary);
-  margin-bottom: 0.25rem;
-}
-
-.footer-link {
-  font-family: 'Manrope', sans-serif;
-  font-size: 16px;
-  line-height: 1.6;
-  font-weight: 400;
-  color: var(--color-on-background);
-  text-decoration: none;
-  transition: color 0.3s ease;
-}
-
-.footer-link:hover {
-  color: var(--color-primary);
 }

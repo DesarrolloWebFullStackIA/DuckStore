@@ -1,164 +1,184 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>DuckStore - Catalog</title>
-  
-  <!-- Fuentes -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
-  
-  <!-- Estilos personalizados -->
-  <link rel="stylesheet" href="../src/css/catalog-styles.css">
-</head>
-<body>
-  <!-- Header / Navegacion -->
-  <header class="site-header">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DuckStore - Catalog</title>
+
+    <!-- Fuentes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600&family=Playfair+Display:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Estilos personalizados -->
+    <link rel="stylesheet" href="../src/css/catalog-styles.css" />
+    <link rel="stylesheet" href="../src/css/global-styles.css">
+    
+    <!-- Scripts -->
+    <script src="../src/js/global-js.js"></script>
+  </head>
+  <body>
+    <!-- Header / Navegacion -->
+   <header class="site-header">
     <div class="container header-inner">
-      <a class="logo-link" href="#">
+      <a class="logo-link" href="../index.html">
         <img 
-          src="https://lh3.googleusercontent.com/aida-public/AB6AXuC9nXJNiaa0pBwgr525-XUej_e4fTvIMQutH7HJPhniut2qgMD7EEMrQ-9rvpZwBemFVeCrr1-9zFIhnogho9OCH0e41Enl9vTVR0g6ZdJJEnSQkNDLj1QjvUWkLbeXEDtkmBAWwUiRejCjwvhu63d3P62pVR2NHdiLQVpRK5RCJ669ROu5gktcSH_ZZEfESXCFNv2cwBQ1aNK2ylgyxl2EYx4Gg62s5V_6722mFSNBPXLuyXjep-6L2Q" 
+          src="../src/img/logo-duck.png" 
           alt="DUCKSTORE Logo" 
           class="logo-img"
         >
         <span class="logo-text">DUCKSTORE</span>
       </a>
-      
+
       <nav class="nav-desktop">
-        <a class="nav-link active" href="#">CATALOG</a>
-        <a class="nav-link" href="#">COLLECTIONS</a>
-        <a class="nav-link" href="#">ARTISANS</a>
-        <a class="nav-link" href="#">STORY</a>
+        <a class="nav-link active" href="catalog.html">CATÁLOGO</a>
+        <a class="nav-link" href="product.html">PRODUCTO DESTACADO</a>
+        <a class="nav-link" href="contact.html">CONTACTO</a>
       </nav>
-      
-      <div class="header-actions">
-        <button class="search-btn" aria-label="Buscar">
-          <span class="material-symbols-outlined">search</span>
-        </button>
-      </div>
+
+      <button class="hamburger-btn" id="hamburger-btn" aria-label="Abrir menú">
+        <img src="../src/img/icono-burguer.png" alt="Menú" class="hamburger-icon">
+      </button>
     </div>
+    
+    <nav class="nav-mobile" id="nav-mobile">
+      <a class="nav-mobile-link active" href="catalog.html">CATÁLOGO</a>
+      <a class="nav-mobile-link" href="product.html">PRODUCTO DESTACADO</a>
+      <a class="nav-mobile-link" href="contact.html">CONTACTO</a>
+    </nav>
   </header>
 
-  <!-- Contenido principal -->
-  <main class="site-main">
-    <!-- Page Header -->
-    <header class="page-header">
-      <h1 class="page-title">The Collection</h1>
-      <p class="page-description">
-        Discover our meticulously curated selection of handcrafted masterpieces. Each piece represents the pinnacle of artisanal craftsmanship and material purity.
-      </p>
-    </header>
+    <!-- Contenido principal -->
+    <main class="site-main">
+      <!-- Page Header -->
+      <header class="page-header">
+        <h1 class="page-title">Catalogo</h1>
+        <p class="page-description">
+          Descubre nuestra selección meticulosamente curada de obras maestras
+          artesanales. Cada pieza representa la cima de la artesanía y la pureza
+          de los materiales.
+        </p>
+      </header>
 
-    <!-- Filters -->
-    <div class="filters-wrapper">
-      <button class="filter-btn active" data-filter="all">All Materials</button>
-      <button class="filter-btn" data-filter="woods">Precious Woods</button>
-      <button class="filter-btn" data-filter="metals">Cast Metals</button>
-      <button class="filter-btn" data-filter="minerals">Polished Minerals</button>
-    </div>
+      <!-- Product Grid -->
+      <div class="product-grid">
+        <!-- Product Card 1 -->
+        <article class="product-card">
+          <div class="product-image-wrapper">
+            <img
+              class="product-img"
+              src="../src/img/obsidian-duck.jpg"
+              alt="Pato de obsidiana negro."
+            />
+            <p class="product-description">
+              Tallado en un único bloque de obsidiana, refleja una profundidad
+              serena y misteriosa.
+            </p>
+          </div>
+          <div class="product-info">
+            <h3 class="product-title">El Ánade de Obsidiana</h3>
+          </div>
+        </article>
 
-    <!-- Product Grid -->
-    <div class="product-grid">
-      <!-- Product Card 1 -->
-      <article class="product-card">
-        <div class="product-image-wrapper">
-          <img 
-            class="product-img" 
-            src="https://lh3.googleusercontent.com/aida-public/AB6AXuA-58MXTLbjBf5r6DQYPXbAwiNBwsuiJKxlrAbbPUPwf3hS554sm7SoORp34OKfuYlswMveFIKWXuXpcacCybCXQlOSFEiXLuAdQIQj0zJSzQO7YnTxgPW7Aj0r606ynWJ0YbzCzUvwI9y026ItWHDeVbFVS2kSmxnR28SZh-9dT9UgPM2ja1rJt7sV8u7dbU6iOLPk-ZuV7K_tS_zOrDHX1x7FNXulA50gODVtjrrGfqjNUtcYCNVHdA" 
-            alt="A macro studio photograph of a highly polished black obsidian duck sculpture resting on a dark velvet surface. Subtle golden lighting highlights the smooth, reflective curves of the mineral, evoking a sense of deep, silent luxury in a dark-themed gallery setting."
-          >
-        </div>
-        <div class="product-info">
-          <h3 class="product-title">The Obsidian Mallard</h3>
-          <span class="product-price">$1,200</span>
-        </div>
-        <p class="product-description">Carved from a single block of volcanic glass, reflecting silent depths.</p>
-      </article>
+        <!-- Product Card 2 -->
+        <article class="product-card">
+          <div class="product-image-wrapper">
+            <img
+              class="product-img"
+              src="../src/img/gold-duck.jpg"
+              alt="Pato dorado hecho a base de oro de 24k."
+            />
+            <p class="product-description">
+              Fundida en latón macizo y recubierta con una fina lámina de oro de
+              24 quilates. Una pieza concebida para perdurar.
+            </p>
+          </div>
+          <div class="product-info">
+            <h3 class="product-title">El Pato Soberano</h3>
+          </div>
+        </article>
 
-      <!-- Product Card 2 -->
-      <article class="product-card">
-        <div class="product-image-wrapper">
-          <img 
-            class="product-img" 
-            src="https://lh3.googleusercontent.com/aida-public/AB6AXuBOK3CgzMJHk9Mb4aqe0Q_nhs8iB35JJChmgZOE4xwa_fILlcGS7lyJYeNkzYdQfhNvZFWG7wtcOdKk5Ktuv0ClYwwFTBnoRBe9lh-MU-JyZyQRrDYnSe-Vpc4aXBuRrVWtPgnBML2KvpnU1gh8kC27r7kQ1RPrSNGUEXonvxqll1Rn7rBiKrBx9m_WEuSkE0uAuGYrREWvJpifHpjR3_ZyUxkdL6TY1orAM6j7-o3lma7Wl2OeCNtuDw" 
-            alt="An elegant product shot of a solid brass duck figurine with 24k gold plating, positioned on a sleek dark slate podium. Warm, directional spotlights create sharp highlights and deep shadows, emphasizing the precision craftsmanship and opulent material in a high-end editorial style."
-          >
-        </div>
-        <div class="product-info">
-          <h3 class="product-title">Golden Sovereign</h3>
-          <span class="product-price">$3,500</span>
-        </div>
-        <p class="product-description">Cast in solid brass and enveloped in 24-karat gold leaf. A testament to enduring value.</p>
-      </article>
+        <!-- Product Card 3 -->
+        <article class="product-card">
+          <div class="product-image-wrapper">
+            <img
+              class="product-img"
+              src="../src/img/marmol-duck.jpg"
+              alt="Pato de mármol blanco de Carrara con vetas grises sutiles."
+            />
+            <p class="product-description">
+              Esculpida en impecable mármol de Carrara, capturando la quietud de
+              los cielos invernales.
+            </p>
+          </div>
+          <div class="product-info">
+            <h3 class="product-title">El Ánade Celestial</h3>
+          </div>
+        </article>
 
-      <!-- Product Card 3 -->
-      <article class="product-card">
-        <div class="product-image-wrapper">
-          <img 
-            class="product-img" 
-            src="https://lh3.googleusercontent.com/aida-public/AB6AXuAwlTSOoCZKrNazXAwaSzuOoVzjGtkBOyXeg0cb8Reyu9rEqHM-xoOJsk4FBfYUPug5dS_2927t0OYW4sQKrxh4NGpqCedO8IR2FMmaqMWk9rsfChYkqFLUnl_tKyFDiuhow2nz_U9uDnNrdjf7tlnKZn6sIyXdxWoal-S4AERPd3t-Bx3I_h4boCEzz4HSyNOSXtTtUapIEEX4KxWPxlljyH5QLP7lLSY2ds5S_Fut_cY3q0lwWOHBNw" 
-            alt="A detailed photograph of a duck sculpted from white Carrara marble with subtle grey veining. The piece sits on a matte black pedestal under soft, diffused gallery lighting, creating a stark contrast that highlights the ethereal purity of the stone against the dark luxury backdrop."
-          >
-        </div>
-        <div class="product-info">
-          <h3 class="product-title">Celestial Marble</h3>
-          <span class="product-price">$2,800</span>
-        </div>
-        <p class="product-description">Sculpted from pristine Carrara marble, capturing the stillness of winter skies.</p>
-      </article>
+        <!-- Product Card 4 -->
+        <article class="product-card">
+          <div class="product-image-wrapper">
+            <img
+              class="product-img"
+              src="../src/img/wood-duck.jpg"
+              alt="Pato de madera de caoba con acabado natural."
+            />
+            <p class="product-description">
+              Torneada a mano a partir de caoba recuperada con más de un siglo
+              de antigüedad, con una calidez y una veta incomparables.
+            </p>
+          </div>
+          <div class="product-info">
+            <h3 class="product-title">La Herencia de Caoba</h3>
+          </div>
+        </article>
 
-      <!-- Product Card 4 -->
-      <article class="product-card">
-        <div class="product-image-wrapper">
-          <img 
-            class="product-img" 
-            src="https://lh3.googleusercontent.com/aida-public/AB6AXuCPVc8P7UhKo3TtUw_q14imCmu9eJKQA5BcB1BdEANd0m-eFq8vvFAStpIeJKsWwQ4rYKADU_5gkAFtFZ4Bm_sJcNNRyH0T9Ujz8FgkArvuer57NcDIr5-S7GSYU7GV2tZ1-Dscm1a9VCwXrIb3fKENoK_KH_TbOx9VCFI87GcztwaIIPKufzzOEd9ghcBub5B497t6_QX-_c_2NARC5-FkFvpC6tjer9hUw_WA7i0PDGABxbdRh4GNEw" 
-            alt="A close-up, dramatic image of a hand-carved mahogany wood duck. The rich, dark reddish-brown grain of the wood is illuminated by a warm, low-angle light, resting on a dark leather mat. The aesthetic is warm, historic, and supremely crafted, fitting a dark luxury theme."
-          >
-        </div>
-        <div class="product-info">
-          <h3 class="product-title">Heritage Mahogany</h3>
-          <span class="product-price">$950</span>
-        </div>
-        <p class="product-description">Hand-turned from century-old reclaimed mahogany, offering unmatched warmth and grain.</p>
-      </article>
+        <!-- Product Card 5 -->
+        <article class="product-card">
+          <div class="product-image-wrapper">
+            <img
+              class="product-img"
+              src="../src/img/copper-duck.jpg"
+              alt="Pato de bronce patinado con acabado oscuro."
+            />
+            <p class="product-description">
+              Un estudio de formas facetadas, fundido en bronce macizo y acabado
+              con una pátina oscura única.
+            </p>
+          </div>
+          <div class="product-info">
+            <h3 class="product-title">Bronce Patinado</h3>
+          </div>
+        </article>
 
-      <!-- Product Card 5 -->
-      <article class="product-card">
-        <div class="product-image-wrapper">
-          <img 
-            class="product-img" 
-            src="https://lh3.googleusercontent.com/aida-public/AB6AXuCBXBwAxJMCzgIiVTW11XWKTjkV4zqXmX3uVS88jPPh6ABat7aHHrhgm8kBrAFweFyp7rVLclz8WWyQRa3EdkNJBR7ZgU6CZqtV2jZ7KpT9blHSKe01tlQ2ZUg9GZJSxqmbaXqpJeO8BpddBIxZGjEcxAo0rHivdad4IWxp-LkK7vf9rRpcWNFRtiYYiuc998SXhZbJY20v3abintuf1wTKVQjit3CzU8fXAtIBpO761Lho3BN1nLsAYQ" 
-            alt="A striking product photo of a geometric, faceted duck cast in dark, patinated bronze. The sculpture sits against an absolute black background. The lighting catches the sharp edges of the bronze, highlighting the subtle verdigris and conveying a heavy, brutalist luxury aesthetic."
-          >
-        </div>
-        <div class="product-info">
-          <h3 class="product-title">Patinated Bronze</h3>
-          <span class="product-price">$1,850</span>
-        </div>
-        <p class="product-description">A faceted study in form, cast in heavy bronze and treated with a unique dark patina.</p>
-      </article>
+        <!-- Product Card 6 -->
+        <article class="product-card">
+          <div class="product-image-wrapper">
+            <img
+              class="product-img"
+              src="../src/img/glass-duck.jpg"
+              alt="Pato de vidrio oscuro atravesado por hilos de oro."
+            />
+            <p class="product-description">
+              Cristal oscuro soplado a boca, atravesado por delicados hilos de
+              oro puro.
+            </p>
+          </div>
+          <div class="product-info">
+            <h3 class="product-title">Aurelia Dorada</h3>
+          </div>
+        </article>
+      </div>
+    </main>
 
-      <!-- Product Card 6 -->
-      <article class="product-card">
-        <div class="product-image-wrapper">
-          <img 
-            class="product-img" 
-            src="https://lh3.googleusercontent.com/aida-public/AB6AXuDZSWnHzRqDpaA-QZ9BYAXSipQsn8LX33dtyt46whd1B4WsIUrJUgPK7KCTJq0i2PDW7xyoLKeJrCMBc2EtrPf-4tsq0xWiQIjthf-3adUpFiC6c6NCyrl6Tnuv3LpqqB9TmcTPDKWUvQWZajahWWHrsDxm9rCGmzVw2WHI-N4o0nAociGKSNxSDGo5Jc7QxwQCUZWAHwCgV6Sf1YcfwY_5KTwqypq2IDsxv5IpJCLh0DEgmYkKW7XfDg" 
-            alt="A delicate glass duck sculpture infused with swirling threads of real gold, photographed against a stark black void. Backlighting illuminates the translucency of the glass and the glimmer of the gold inclusions, resulting in a fragile, ethereal luxury piece."
-          >
-        </div>
-        <div class="product-info">
-          <h3 class="product-title">Aurelia Glass</h3>
-          <span class="product-price">$1,100</span>
-        </div>
-        <p class="product-description">Mouth-blown dark crystal infused with delicate threads of pure gold.</p>
-      </article>
-    </div>
-  </main>
 
   <!-- Footer -->
   <footer class="site-footer">
@@ -166,36 +186,23 @@
       <div class="footer-brand">
         <div class="footer-logo-wrapper">
           <img 
-            src="https://lh3.googleusercontent.com/aida/AEtjO1WoZ6lV-lTSaNU9nq51LeqIuYd6aYaTFZnuijzxNT27KKSc4VJ4S1Fapz1LpvRHfzdqRknZ1g_gc2RP1ngRROePGIUr-KXUSqgzUazsnSjyyx4SVg3I8aLcE9QUMlY_dY3Gp8bhtHzHKM0LqTT10ykrcSvMMp8rPBvDDGKHH6sO4Z8f5s4emQ8t0HY3xtTuR3VWDll38M73UFXAC3_pKTyFSshyrvVNwlAaGaCzGm-LZoscrApDDX-mhUQ" 
+            src="../src/img/logo-duck.png" 
             alt="DUCKSTORE Logo" 
             class="footer-logo"
-          >
-          <span class="footer-brand-name">DUCKSTORE</span>
+          />
+           <span class="footer-brand-name">DUCKSTORE</span>
         </div>
         <p class="footer-copyright">
-          © 2024 DUCKSTORE. ALL RIGHTS RESERVED.
+          © 2026 DUCKSTORE.
         </p>
       </div>
       
       <div class="footer-concierge">
-        <h4 class="footer-concierge-label">CONCIERGE</h4>
+        <h4 class="footer-concierge-label">CONTACTO</h4>
         <a href="tel:+442079460000" class="footer-link">+44 20 7946 0000</a>
         <a href="mailto:concierge@duckstore.com" class="footer-link">concierge@duckstore.com</a>
       </div>
-    </div>
-  </footer>
-
-  <!-- Script para filtros -->
-  <script>
-    // Simple filter interaction for visual feedback
-    document.querySelectorAll('.filter-btn').forEach(btn => {
-      btn.addEventListener('click', (e) => {
-        document.querySelectorAll('.filter-btn').forEach(b => {
-          b.classList.remove('active');
-        });
-        e.target.classList.add('active');
-      });
-    });
-  </script>
-</body>
+    </footer>
+    <script src="../src/js/hamb.js"></script>
+  </body>
 </html>
