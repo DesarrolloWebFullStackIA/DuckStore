@@ -1,8 +1,3 @@
-/* ===================================
-   DuckStore Product Page - CSS personalizado
-   (Reemplaza Tailwind)
-   =================================== */
-
 /* --- Variables (mismas que styles.css anterior) --- */
 :root {
   /* Colores */
@@ -92,68 +87,6 @@ body {
   display: flex;
   flex-direction: column;
 }
-
-/* --- Tipografias --- */
-.font-display-lg {
-  font-family: 'Playfair Display', serif;
-  font-size: 64px;
-  line-height: 1.1;
-  letter-spacing: -0.02em;
-  font-weight: 700;
-}
-
-.font-headline-md {
-  font-family: 'Playfair Display', serif;
-  font-size: 32px;
-  line-height: 1.3;
-  font-weight: 500;
-}
-
-.font-headline-lg-mobile {
-  font-family: 'Playfair Display', serif;
-  font-size: 32px;
-  line-height: 1.2;
-  font-weight: 600;
-}
-
-.font-headline-lg {
-  font-family: 'Playfair Display', serif;
-  font-size: 48px;
-  line-height: 1.2;
-  font-weight: 600;
-}
-
-.font-label-caps {
-  font-family: 'Manrope', sans-serif;
-  font-size: 12px;
-  line-height: 1.0;
-  letter-spacing: 0.15em;
-  font-weight: 600;
-  text-transform: uppercase;
-}
-
-.font-body-lg {
-  font-family: 'Manrope', sans-serif;
-  font-size: 18px;
-  line-height: 1.6;
-  letter-spacing: 0.01em;
-  font-weight: 400;
-}
-
-.font-body-md {
-  font-family: 'Manrope', sans-serif;
-  font-size: 16px;
-  line-height: 1.6;
-  font-weight: 400;
-}
-
-/* --- Colores de texto --- */
-.text-primary { color: black; }
-.text-on-background { color: black; }
-.text-on-surface-variant { color: ; }
-.text-on-surface { color: black; }
-.text-outline-variant { color: black; }
-.text-primary-container { color: black; }
 
 /* --- Container --- */
 .container {
