@@ -453,6 +453,7 @@ body {
 /* --- Botones --- */
 .solid-button {
   width: 100%;
+  text-decoration: none;
   background-color:#dac37e;
   color:#13120e;
   border: 1px solid var(--color-primary-container);

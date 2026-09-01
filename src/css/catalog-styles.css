@@ -89,16 +89,6 @@ body {
   flex-direction: column;
 }
 
-/* --- Tipografias --- */
-
-
-
-
-
-
-
-/* --- Colores de texto --- */
-
 /* --- Container --- */
 .container {
   max-width: var(--spacing-container-max);
@@ -114,7 +104,6 @@ body {
     padding-right: var(--spacing-margin-desktop);
   }
 }
-
 
 /* --- Main --- */
 .site-main {
