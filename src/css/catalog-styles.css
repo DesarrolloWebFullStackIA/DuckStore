@@ -186,7 +186,6 @@ body {
 
 /* --- Product Card --- */
 .product-card {
-  cursor: pointer;
   transition: all 0.5s ease;
   border-bottom: 1px solid transparent;
   padding-bottom: 1rem;

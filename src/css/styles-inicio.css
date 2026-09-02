@@ -16,7 +16,7 @@
   /* --color-outline: #757768; */
   --color-surface-container-lowest: #ffffff;
   /* --color-tertiary-fixed: #e5e2e1; */
-  /* --color-primary: #8a6d00; */
+  --color-primary: #f2ca50;
   /* --color-surface-tint: #e9c349; */
   /* --color-secondary-fixed-dim: #c6c7c3; */
   /* --color-surface-container-highest: #e8e8e8; */
@@ -200,7 +200,6 @@ body {
   font-weight: 600;
   color: #fdfcfc;
   margin-bottom: 2rem;
-  leading-trim: tight;
 }
 
 @media (min-width: 768px) {
