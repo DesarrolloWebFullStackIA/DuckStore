@@ -244,6 +244,8 @@ body {
   color: white;
   font-style: italic;
 
+  
+
   /* CAMBIADO: ocupa todo el ancho de la imagen */
   position: absolute;
   bottom: 0;
@@ -269,6 +271,12 @@ body {
     transform 0.4s ease-out,
     opacity 0.4s ease-out,
     visibility 0.4s ease-out;
+}
+
+.price {
+  color: #c5a059;
+  font-weight: bold; 
+  font-size: 18px;
 }
 
 .product-card:hover .product-description {
