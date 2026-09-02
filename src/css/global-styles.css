@@ -134,7 +134,7 @@
 
 .nav-mobile-link:hover,
 .nav-mobile-link.active {
-  color: var(--color-primary);
+  color:goldenrod;
   background-color: rgba(255, 255, 255, 0.05);
 }
 
