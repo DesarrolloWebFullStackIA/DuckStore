@@ -144,6 +144,16 @@ body {
   font-weight: 600;
   color:#0e0e0e;
   margin-bottom: 1rem;
+  display: inline-block;
+  position: relative;
+}
+
+.page-title::after {
+  content: "";
+  display: block;
+  height: 2px;
+  background-color: var(--color-primary);
+  margin-top: 6px;
 }
 
 @media (min-width: 768px) {
