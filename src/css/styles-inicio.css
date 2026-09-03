@@ -416,6 +416,12 @@ body {
   gap: var(--spacing-gutter);
 }
 
+@media (max-width: 768px) {
+  .material-cards-small {
+    margin-right: -1.5rem;
+  }
+}
+
 .material-card-small {
   position: relative;
   overflow: hidden;
