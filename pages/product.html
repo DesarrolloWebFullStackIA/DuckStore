@@ -1,36 +1,38 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Aurelian Mallard - DUCKSTORE</title>
-  
+  <title>Aurelian Mallard | DuckStore</title>
+  <link rel="icon" href="../src/img/web-icon.webp">
+
   <!-- Fuentes -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet">
-  
+  <link
+    href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600&family=Playfair+Display:wght@500;600;700&display=swap"
+    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
+    rel="stylesheet">
+
   <!-- Estilos personalizados -->
   <link rel="stylesheet" href="../src/css/product-styles.css">
   <link rel="stylesheet" href="../src/css/global-styles.css">
-  
+
   <!-- Scripts -->
   <script src="../src/js/global-js.js"></script>
 </head>
+
 <body>
   <!-- Header / Navegacion -->
   <header class="site-header">
     <div class="container header-inner">
       <a class="logo-link" href="../index.html">
-        <img 
-          src="../src/img/logo-duck.png" 
-          alt="DuckStore Logo" 
-          class="logo-img"
-        >
+        <img src="../src/img/logo-duck.webp" alt="DuckStore Logo" class="logo-img">
         <span class="logo-text">DUCKSTORE</span>
       </a>
-      
+
       <nav class="nav-desktop">
         <a class="nav-link" href="catalog.html">CATÁLOGO</a>
         <a class="nav-link active" href="product.html">PRODUCTO DESTACADO</a>
@@ -38,7 +40,7 @@
       </nav>
 
       <button class="hamburger-btn" id="hamburger-btn" aria-label="Abrir menú">
-        <img src="../src/img/icono-burguer.png" alt="Menú" class="hamburger-icon">
+        <img src="../src/img/icono-burguer.webp" alt="Menú" class="hamburger-icon">
       </button>
     </div>
     <nav class="nav-mobile" id="nav-mobile">
@@ -53,9 +55,9 @@
     <div class="container">
       <!-- Breadcrumbs -->
       <nav class="breadcrumbs">
-        <a href="#">INICIO</a>
+        <a href="../index.html">INICIO</a>
         <span class="separator">/</span>
-        <a href="#">CATÁLOGO</a>
+        <a href="catalog.html">CATÁLOGO</a>
         <span class="separator">/</span>
         <span class="current"> PRODUCTO DESTACADO</span>
       </nav>
@@ -64,47 +66,76 @@
       <div class="product-grid">
         <!-- Image Gallery (Left Column) -->
         <div class="product-gallery">
-          <!-- Main image -->
-          <div class="image-container main-image">
-            <img 
-              src="../src/img/aurelian-duck.jpg" 
-              alt="Una fotografía de estudio en primer plano de un pato real de oro macizo de 24 quilates. El pato descansa sobre un sobrio pedestal negro mate."
-            >
-          </div>
-          
-          <!-- Thumbnails -->
-          <div class="thumbnail-grid">
-            <div class="image-container">
-              <img 
-                src="../src/img/aurelian-duck-zoom.jpg" 
-                alt="Una fotografía macro detallada que se centra en la intrincada textura de las plumas de la figura coleccionable del pato real realizada en oro de 24 quilates."
-              >
-            </div>
-            <div class="image-container">
-              <img 
-                src="../src/img/aurelian-duck-overview.jpg" 
-                alt="Una fotografía de estilo de vida en la que se muestra el pato Aurelian Mallard, de oro de 24 quilates, colocado con delicadeza sobre una superficie de mármol negro pulido en un lujoso y moderno estudio con iluminación tenue."
-              >
-            </div>
-          </div>
-        </div>
+        <div class="gallery-layout">
+        <!-- Miniaturas -->
+        <div class="thumbnail-list">
+         <button
+          type="button"
+          class="thumbnail active"
+          data-image="../src/img/aurelian-duck.webp"
+          data-alt="Fotografía de estudio del pato Aurelian Mallard"
+          aria-label="Mostrar imagen principal"
+        >
+          <img
+            src="../src/img/aurelian-duck.webp"
+            alt="Miniatura de la fotografía principal"
+          >
+        </button>
+
+        <button
+          type="button"
+          class="thumbnail"
+          data-image="../src/img/aurelian-duck-zoom.webp"
+          data-alt="Detalle de las plumas doradas del pato Aurelian Mallard"
+          aria-label="Mostrar detalle del pato"
+        >
+          <img
+            src="../src/img/aurelian-duck-zoom.webp"
+            alt="Miniatura del detalle del pato"
+          >
+        </button>
+
+        <button
+          type="button"
+          class="thumbnail"
+          data-image="../src/img/aurelian-duck-overview.webp"
+          data-alt="Vista general del pato Aurelian Mallard sobre mármol negro"
+          aria-label="Mostrar vista general del pato"
+        >
+          <img
+            src="../src/img/aurelian-duck-overview.webp"
+            alt="Miniatura de la vista general del pato"
+          >
+        </button>
+      </div>
+
+      <!-- Imagen grande -->
+      <div class="image-container main-image">
+        <img
+          src="../src/img/aurelian-duck.webp"
+          alt="Fotografía de estudio del pato Aurelian Mallard"
+        >
+      </div>
+    </div>
+  </div>
 
         <!-- Product Details (Right Column) -->
         <div class="product-details">
           <div>
             <!-- Edition badge -->
             <div class="edition-badge">EDICIÓN LIMITADA 1 DE 50</div>
-            
+
             <!-- Title -->
             <h1 class="product-title">Aurelian Mallard</h1>
-            
+
             <!-- Price -->
-            <p class="product-price">12,500€</p>
-            
+            <p class="product-price">12.500 €</p>
+
             <!-- Description -->
             <div class="product-description">
               <p>
-Una obra maestra del arte metalúrgico, el Aurelian Mallard representa la cúspide de nuestra colección. Forjado en bronce macizo y meticulosamente bañado a mano en oro puro de 24 quilates por el maestro artesano Elias Thorne en Ginebra, cada ejemplar se somete a un riguroso proceso de pulido de 14 etapas para lograr un acabado que evoca la fluidez de la luz, capturando así el porte majestuoso del ave acuática en un estado eterno y luminoso.              </p>
+                Una obra maestra del arte metalúrgico. El Aurelian Mallard representa la cúspide de nuestra colección. Forjado en bronce macizo y meticulosamente bañado a mano en oro puro de 24 quilates por el maestro artesano Elias Thorne en Ginebra. Cada ejemplar se somete a un riguroso proceso de pulido de 14 etapas para lograr un acabado que evoca la fluidez de la luz, capturando así el porte majestuoso del ave acuática en un estado eterno y luminoso.
+              </p>
             </div>
 
             <!-- Specifications -->
@@ -113,12 +144,12 @@ Una obra maestra del arte metalúrgico, el Aurelian Mallard representa la cúspi
               <div class="spec-grid">
                 <div class="spec-item">
                   <span class="spec-label">MATERIAL</span>
-                  <span class="spec-value">24k Oro </span>
+                  <span class="spec-value">24 k de Oro </span>
                 </div>
                 <div class="detail-divider"></div>
                 <div class="spec-item">
                   <span class="spec-label">PESO</span>
-                  <span class="spec-value">1.2 kg</span>
+                  <span class="spec-value">1,2 kg</span>
                 </div>
                 <div class="detail-divider"></div>
                 <div class="spec-item">
@@ -137,14 +168,12 @@ Una obra maestra del arte metalúrgico, el Aurelian Mallard representa la cúspi
                 Quedan 3 unidades disponibles
               </span>
             </div>
-            
-            <button class="solid-button">
-SOLICITUD DE ADQUISICIÓN
+            <a href="contact.html" class="solid-button">
+              SOLICITAR ADQUISICIÓN
               <span class="material-symbols-outlined">arrow_forward</span>
-            </button>
-            
+            </a>
             <div class="viewing-link">
-              <a href="#">PROGRAMAR UNA VISITA PRIVADA</a>
+              <a href="contact.html">PROGRAMAR UNA VISITA PRIVADA</a>
             </div>
           </div>
         </div>
@@ -152,29 +181,27 @@ SOLICITUD DE ADQUISICIÓN
     </div>
   </main>
 
- <!-- Footer -->
+  <!-- Footer -->
   <footer class="site-footer">
     <div class="footer-inner">
       <div class="footer-brand">
         <div class="footer-logo-wrapper">
-          <img 
-            src="../src/img/logo-duck.png" 
-            alt="DUCKSTORE Logo" 
-            class="footer-logo"
-          />
-           <span class="footer-brand-name">DUCKSTORE</span>
+          <img src="../src/img/logo-duck.webp" alt="DUCKSTORE Logo" class="footer-logo" />
+          <span class="footer-brand-name">DUCKSTORE</span>
         </div>
         <p class="footer-copyright">
-          © 2026 DUCKSTORE.
+          © 2026 DUCKSTORE<br>
+          TODOS LOS DERECHOS RESERVADOS
         </p>
       </div>
-      
+
       <div class="footer-concierge">
         <h4 class="footer-concierge-label">CONTACTO</h4>
         <a href="tel:+442079460000" class="footer-link">+44 20 7946 0000</a>
         <a href="mailto:concierge@duckstore.com" class="footer-link">concierge@duckstore.com</a>
       </div>
-    </footer>
-    <script src="../src/js/hamb.js"></script>
+  </footer>
+  <script src="../src/js/hamb.js"></script>
+  <script src="../src/js/product-gallery.js"></script>
 </body>
 </html>

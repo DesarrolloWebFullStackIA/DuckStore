@@ -45,7 +45,7 @@
   color:antiquewhite;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1024px) {
   .nav-desktop {
     display: flex;
   }
@@ -97,7 +97,7 @@
   object-fit: contain;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1024px) {
   .hamburger-btn {
     display: none;
   }
@@ -134,11 +134,11 @@
 
 .nav-mobile-link:hover,
 .nav-mobile-link.active {
-  color: var(--color-primary);
+  color:goldenrod;
   background-color: rgba(255, 255, 255, 0.05);
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1024px) {
   .nav-mobile {
     display: none !important;
   }
