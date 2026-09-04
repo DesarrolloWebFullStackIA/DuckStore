@@ -1,6 +1,6 @@
 <div align="center">
 
-  <img src="./src/img/logo-duck.png" alt="DuckStore Logo" width="120">
+  <img src="./src/img/logo-duck.webp" alt="DuckStore Logo" width="120">
 
   # 🦆 DUCKSTORE
   ### *L'Art de la Collection — Boutique Digital de Figuras Exclusivas*
